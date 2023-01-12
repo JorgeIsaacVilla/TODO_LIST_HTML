@@ -3,21 +3,42 @@
     padding: 0px; 
 }
 body{
-    background: rgb(5, 73, 109);
-    align-items: center;
+    background: rgb(76,118,252);
+    background: linear-gradient(90deg, rgba(76,118,252,1) 0%, rgba(210,244,252,1) 52%, rgba(50,230,253,1) 100%);
 }
 h1{
     font-family: 'Poppins',sans-serif;
     justify-content: center;
     align-items: center;
     display: flex;
-    margin-top: 5vh;
-    color: aliceblue;
-    text-shadow: 0 0 10px  white, 0 0 40px  white, 0 0 80px  white;
+    color: rgb(44, 103, 105);
     margin-bottom: 5vh;
+    width: 40%;
+    margin: auto;
+    margin-top: 3rem;
+    margin-bottom: 10px;
+    width: 30%;
+    height: 60px;
+    border-radius:  20px;
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7.2px);
+    -webkit-backdrop-filter: blur(7.2px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
 }
 .check_list_container{
     align-items: center;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    width: 30%;
+    border-radius: 15px;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 25px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7.2px);
+    -webkit-backdrop-filter: blur(7.2px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
 } 
         #login_panel{
             justify-content: center;
@@ -28,6 +49,7 @@ h1{
                 .imput_1{
                     height: 25px;
                     width: 300PX;
+                    border: solid 1px rgb(44, 103, 105);
                     border-radius: 5px;
                     font-family: 'Poppins',sans-serif;
                     font-size: 16px;
@@ -35,47 +57,51 @@ h1{
                 #add_button{
                     height: 29px;
                     width: 100PX;
+                    border: solid 1px  rgba(44, 103, 105, 0.212);
                     border-radius: 5px;
                     font-family: 'Poppins',sans-serif;
                     font-size: 16px;
-                    margin-left: 1vh; 
+                    margin-left: 1vh;
+                    background: rgba(50, 229, 253, 0.37);
+                    transition: 1s;
+                    color: rgb(44, 103, 105);   
                 }
+
+                #add_button:hover{
+                    height: 29px;
+                    width: 100PX;
+                    background:rgba(50,230,253,1);
+                    box-shadow: 0 0 10px rgba(50,230,253,1), 0 0 40px  white, 0 0 80px  white;
+                    }
 /*.activity_dashboard{}*/
-    #worked{
-        height: 25px;
-        width: 300PX;
+    #worked{    
         border-radius: 5px;
         font-family: 'Poppins',sans-serif;
         font-size: 16px;
-        background-color: rgb(5, 73, 109);
-        margin: auto;
+        text-align: center;
     }
     .worked{
-        height: 25px;
-        width: 300PX;
         border-radius: 5px;
         font-family: 'Poppins',sans-serif;
         font-size: 16px;
-        background-color:white;
+        background-color:rgba(255, 255, 255, 0);
         margin: auto;
     }
     .workett span{
-        height: 25px;
-        width: 300PX;
         border-radius: 5px;
         font-family: 'Poppins',sans-serif;
         font-size: 16px;
-        background-color:white;
+        background-color:rgba(255, 255, 255, 0);
         margin: auto;
     }
     .workett button{
         height: 29px;
         width: 29PX;
-        border-radius: 5px;
+        border:none;
         font-family: 'Poppins',sans-serif;
         font-size: 16px;
         margin-left: 1vh;
         background-image: url(./image/delete.png);
         background-size: 100% 100%;
-
+        background-color: rgba(255, 255, 255, 0);
     }
