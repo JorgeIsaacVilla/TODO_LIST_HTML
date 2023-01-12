@@ -35,11 +35,18 @@
                     ${document.querySelector('#login_panel input').value}
                     </span>
 
-                    <button class="finsh">
-                    <i class="delet_all"></i>
-                    </button>
+                    <i class="delet_all">
+                        <button class="finsh"></button>
+                    </i>
                 </div>
                 `;
+//programar boton de eliminar actividad realizada
+    var current_tasks = document.querySelectorAll(".delet_all");
+    for(var i=0; i<current_tasks.length; i++){
+        current_tasks[i].onclick = function(){
+            this.parentNode.remove();
+        }
+    }
             }
         }
     </script>
