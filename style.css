@@ -1,0 +1,81 @@
+*{
+    margin: 0px;
+    padding: 0px; 
+}
+body{
+    background: rgb(5, 73, 109);
+    align-items: center;
+}
+h1{
+    font-family: 'Poppins',sans-serif;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-top: 5vh;
+    color: aliceblue;
+    text-shadow: 0 0 10px  white, 0 0 40px  white, 0 0 80px  white;
+    margin-bottom: 5vh;
+}
+.check_list_container{
+    align-items: center;
+} 
+        #login_panel{
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            margin-bottom: 15px;
+}
+                .imput_1{
+                    height: 25px;
+                    width: 300PX;
+                    border-radius: 5px;
+                    font-family: 'Poppins',sans-serif;
+                    font-size: 16px;
+}
+                #add_button{
+                    height: 29px;
+                    width: 100PX;
+                    border-radius: 5px;
+                    font-family: 'Poppins',sans-serif;
+                    font-size: 16px;
+                    margin-left: 1vh; 
+                }
+/*.activity_dashboard{}*/
+    #worked{
+        height: 25px;
+        width: 300PX;
+        border-radius: 5px;
+        font-family: 'Poppins',sans-serif;
+        font-size: 16px;
+        background-color: rgb(5, 73, 109);
+        margin: auto;
+    }
+    .worked{
+        height: 25px;
+        width: 300PX;
+        border-radius: 5px;
+        font-family: 'Poppins',sans-serif;
+        font-size: 16px;
+        background-color:white;
+        margin: auto;
+    }
+    .workett span{
+        height: 25px;
+        width: 300PX;
+        border-radius: 5px;
+        font-family: 'Poppins',sans-serif;
+        font-size: 16px;
+        background-color:white;
+        margin: auto;
+    }
+    .workett button{
+        height: 29px;
+        width: 29PX;
+        border-radius: 5px;
+        font-family: 'Poppins',sans-serif;
+        font-size: 16px;
+        margin-left: 1vh;
+        background-image: url(./image/delete.png);
+        background-size: 100% 100%;
+
+    }

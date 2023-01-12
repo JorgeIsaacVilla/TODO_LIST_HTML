@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>TODO LIST HTML</title>
+</head>
+<body>
+    <h1>LISTA DE ACTIVIDADES</h1>
+    <div class="check_list_container">
+        <div id="login_panel">
+            <!-- barra de texto // boton de ingreso de datos-->
+            <input type="text" placeholder="Enter Your Massege" class="imput_1"></input>
+            <button id="add_button">ADD</button>
+        </div>
+        <div class="activity_dashboard">
+            <!-- actividad digitada // boton eliminar-->
+            <div id="worked"></div>
+        </div>
+    </div>
+    <!--logica JS-->
+    <script type="text/javascript">
+        document.querySelector('#add_button').onclick = function (){
+            if(document.querySelector('#login_panel input').value.length == 0){
+                alert("please enter a work")
+            }
+            else{
+                document.querySelector('#worked').innerHTML += `
+                <div class="workett">
+                    <span id=workettname>
+                    ${document.querySelector('#login_panel input').value}
+                    </span>
+
+                    <button class="finsh">
+                    <i class="delet_all"></i>
+                    </button>
+                </div>
+                `;
+            }
+        }
+    </script>
+</body>
+</html>
+<!--cuando se cliquea en ingresar datos, sin digitar datos debe salir una alarma que diga "debe dijitar actividad" -->
